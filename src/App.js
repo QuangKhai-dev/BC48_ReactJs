@@ -3,6 +3,8 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Navigation from './Components/Navigation';
 import DemoCss from './DemoCss/DemoCss';
+import BaiTapChonXe from './DemoState/BaiTapChonXe';
+import BaiTapHienThiPhim from './DemoState/BaiTapHienThiPhim';
 import DemoState from './DemoState/DemoState';
 import HandleOnChange from './HandleEvent/HandleOnChange';
 import HandleOnClick from './HandleEvent/HandleOnClick';
@@ -24,7 +26,9 @@ function App() {
       {/* <HandleOnChange /> */}
       {/* <div id="demo">Bc48</div>
       <DemoCss /> */}
-      <DemoState />
+      {/* <DemoState /> */}
+      {/* <BaiTapChonXe /> */}
+      <BaiTapHienThiPhim />
     </div>
   );
 }
