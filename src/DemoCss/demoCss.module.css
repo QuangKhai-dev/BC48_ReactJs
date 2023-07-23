@@ -1,0 +1,13 @@
+#demo {
+  font-size: 40px;
+  font-weight: bold;
+  color: orange;
+}
+
+.styleButton {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 25px;
+}
