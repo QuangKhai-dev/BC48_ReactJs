@@ -3,6 +3,8 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Navigation from './Components/Navigation';
 import DemoCss from './DemoCss/DemoCss';
+import BaiTapHienThiGiay from './DemoProps/BaiTapHienThiGiay';
+import ListPhim from './DemoProps/ListPhim';
 import BaiTapChonXe from './DemoState/BaiTapChonXe';
 import BaiTapHienThiPhim from './DemoState/BaiTapHienThiPhim';
 import DemoState from './DemoState/DemoState';
@@ -28,7 +30,9 @@ function App() {
       <DemoCss /> */}
       {/* <DemoState /> */}
       {/* <BaiTapChonXe /> */}
-      <BaiTapHienThiPhim />
+      {/* <BaiTapHienThiPhim /> */}
+      {/* <ListPhim /> */}
+      <BaiTapHienThiGiay />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import BaiTapChonXe from './BaiTapChonXe';
+import ItemPhim from './ItemPhim';
 
-export default class BaiTapHienThiPhim extends Component {
+export default class ListPhim extends Component {
   arrPhim = [
     {
       maPhim: 1283,
@@ -160,58 +160,19 @@ export default class BaiTapHienThiPhim extends Component {
     },
   ];
 
-  state = {
-    phim: {},
-  };
-
   render() {
     return (
       <div>
-        <h1>Bài tập hiển thị phim</h1>
-        <div className="row">
-          <div className="col-8">
-            {/* tạo một item chuẩn về một item phim  */}
-            <div className="row">
-              {this.arrPhim.map((item, index) => {
-                // item sẽ đại diện cho từng phần tử có trong mảng
-                console.log(item);
-                console.log(index);
-                /* //item phim  */
-                const { hinhAnh, tenPhim } = item;
-                return (
-                  <div className="col-3" key={index}>
-                    <img src={hinhAnh} alt="" />
-                    <h2>{tenPhim}</h2>
-                    <button
-                      onClick={() => {
-                        this.setState({
-                          phim: item,
-                        });
-                      }}
-                      className="btn btn-success"
-                    >
-                      Xem chi tiết
-                    </button>
-                  </div>
-                );
-              })}
+        {this.arrPhim.map((item, index) => {
+          // khái niệm về props
+          // các bước tạo ra props
+          // tự định nghĩa tên một thuộc tính sẽ chứa giá trị mà chúng ta muốn truyền
+          return (
+            <div key={index}>
+              <ItemPhim phim={item} hoTen="Dương Quá" />
             </div>
-          </div>
-          <div className="col-4">
-            {/* // hiển thị thông tin của bộ phim mà người dùng đã bấm vào nút xem chi tiết  */}
-            <div>
-              <div className="col-4">
-                <img src={this.state.phim.hinhAnh} alt="" />
-              </div>
-              <div className="col-8">
-                <p>{this.state.phim.tenPhim}</p>
-                <p>{this.state.phim.moTa}</p>
-                <p>{this.state.phim.ngayChieu}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <BaiTapChonXe />
+          );
+        })}
       </div>
     );
   }
