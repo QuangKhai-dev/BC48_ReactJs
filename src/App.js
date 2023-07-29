@@ -6,6 +6,7 @@ import DemoCss from './DemoCss/DemoCss';
 import BaiTapHienThiDienThoai from './DemoProps/BaiTapHienThiDienThoai/BaiTapHienThiDienThoai';
 import BaiTapHienThiGiay from './DemoProps/BaiTapHienThiGiay';
 import ListPhim from './DemoProps/ListPhim';
+import DemoRedux from './DemoRedux/DemoRedux';
 import BaiTapChonXe from './DemoState/BaiTapChonXe';
 import BaiTapHienThiPhim from './DemoState/BaiTapHienThiPhim';
 import DemoState from './DemoState/DemoState';
@@ -34,7 +35,8 @@ function App() {
       {/* <BaiTapHienThiPhim /> */}
       {/* <ListPhim /> */}
       {/* <BaiTapHienThiGiay /> */}
-      <BaiTapHienThiDienThoai />
+      {/* <BaiTapHienThiDienThoai /> */}
+      <DemoRedux />
     </div>
   );
 }
