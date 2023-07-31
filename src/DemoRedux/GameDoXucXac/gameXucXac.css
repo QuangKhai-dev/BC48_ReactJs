@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Pony;
+  src: url(./../../../public/gameXucXac/Pony.ttf);
+}
+
+.bg-gameXucXac {
+  background-image: url(./../../../public/gameXucXac/bgGame.png);
+  height: 100vh;
+  font-family: Pony;
+  padding: 50px 0;
+}

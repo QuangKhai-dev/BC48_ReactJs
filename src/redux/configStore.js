@@ -1,4 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
+import { xucXacReducer } from './reducer/xucXacReducer';
 
 export const store = configureStore({
   reducer: {
@@ -8,5 +9,6 @@ export const store = configureStore({
         lop: 'lớp 1',
       };
     },
+    xucXacReducer,
   },
 });

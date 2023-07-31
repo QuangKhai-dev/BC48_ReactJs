@@ -7,6 +7,7 @@ import BaiTapHienThiDienThoai from './DemoProps/BaiTapHienThiDienThoai/BaiTapHie
 import BaiTapHienThiGiay from './DemoProps/BaiTapHienThiGiay';
 import ListPhim from './DemoProps/ListPhim';
 import DemoRedux from './DemoRedux/DemoRedux';
+import GameDoXucXac from './DemoRedux/GameDoXucXac/GameDoXucXac';
 import BaiTapChonXe from './DemoState/BaiTapChonXe';
 import BaiTapHienThiPhim from './DemoState/BaiTapHienThiPhim';
 import DemoState from './DemoState/DemoState';
@@ -36,7 +37,8 @@ function App() {
       {/* <ListPhim /> */}
       {/* <BaiTapHienThiGiay /> */}
       {/* <BaiTapHienThiDienThoai /> */}
-      <DemoRedux />
+      {/* <DemoRedux /> */}
+      <GameDoXucXac />
     </div>
   );
 }
