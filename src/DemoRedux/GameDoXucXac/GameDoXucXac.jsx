@@ -39,7 +39,7 @@ class GameDoXucXac extends Component {
 
 const randomXucXac = () => {
   const randomNumber = Math.floor(Math.random() * 6) + 1;
-  console.log(randomNumber);
+  // console.log(randomNumber);
   return randomNumber;
 };
 

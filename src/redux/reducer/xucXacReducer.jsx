@@ -8,7 +8,7 @@ const initialState = {
 };
 
 export const xucXacReducer = (state = initialState, action) => {
-  console.log(action);
+  // console.log(action);
 
   // switch case giúp bắt các action được gửi lên
   // eslint-disable-next-line default-case
